@@ -1,0 +1,33 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  padding: 2em;
+  width: fit-content;
+  margin: auto;
+}
+
+.card h4,
+.card a {
+  background-color: darkblue;
+  color: #ccc;
+  margin: 0em;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.card img {
+  width: 10em;
+  height: 10em;
+  object-fit: cover;
+}
+
+.card ul {
+  list-style: none;
+  color: #ccc;
+  background-color: darkblue;
+  padding: 1em;
+  margin: 0;
+}

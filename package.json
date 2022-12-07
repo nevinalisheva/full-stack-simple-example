@@ -1,0 +1,15 @@
+{
+  "name": "full-stack-mysql-advanced",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "backend": "cd backend && npm run dev",
+    "frontend": "cd frontend && npm start",
+    "install_all": "cd backend && npm i && cd .. && cd frontend && npm i && cd .."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
