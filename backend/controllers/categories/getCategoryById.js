@@ -1,8 +1,9 @@
 const connection = require("../../db");
 
 const getCategoryById = async (req, res) => {
-  const query =
-    "SELECT categories.category_id, categories.title, images.url AS image FROM categories JOIN images ON categories.image_id = images.image_id WHERE categories.category_id= ?";
+  // write a query that returns values from multiple tables
+  // hint : you have to use JOIN
+  const query = "SOLUTION HERE";
   const { id } = req.params;
   connection
     .promise()

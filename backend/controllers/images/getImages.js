@@ -4,9 +4,9 @@ const getImages = async (req, res, next) => {
   if (Object.keys(req.query).length) {
     return next();
   }
-  const query =
-    "SELECT images.image_id, images.title, images.url, products.title AS product, categories.title AS category FROM images LEFT JOIN products ON products.product_id = images.product_id LEFT JOIN categories ON categories.category_id = images.category_id";
-
+  // write a query that returns values from multiple tables
+  // hint : you have to use JOIN
+  const query = "SOLUTION HERE";
   connection
     .promise()
     .query(query)
