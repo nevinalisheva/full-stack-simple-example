@@ -2,9 +2,8 @@ const connection = require("../../db");
 
 const getProductById = async (req, res) => {
   // write a query that returns values from multiple tables
-  // hint : you have to use JOIN 
-  const query = 
-    "SOLUTION HERE";
+  // hint : you have to use JOIN
+  const query = "SE";
   const { id } = req.params;
   connection
     .promise()
