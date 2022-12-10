@@ -5,7 +5,8 @@ const getImagesByType = async (req, res) => {
   if (type === "products") {
     // write a query that returns values from multiple tables
     // hint : you have to use JOIN
-    const query = "SOLUTION HERE";
+    const query =
+      "SELECT i.image_id, i.title, i.url, p.title AS product FROM images AS i JOIN products AS p ON p.product_id=i.product_id";
     connection
       .promise()
       .query(query)

@@ -5,11 +5,12 @@ import { useState } from "react";
 import { CONTAINER } from "./../../components/global";
 
 export const Images = () => {
-  const { REACT_APP_API_URL } = process.env;
+  // const { REACT_APP_API_URL } = process.env;
   const [selectedOption, setSelectedOption] = useState("all");
-  const url = `${REACT_APP_API_URL}/images${
+  const url = `http://localhost:8880/images${
     selectedOption !== "all" ? `?type=${selectedOption}` : ""
   }`;
+  // const url1 = `http://localhost:8880/images`;
   const [response, error, loading] = useFetch(url);
 
   if (error) return <div>something wrong happened</div>;

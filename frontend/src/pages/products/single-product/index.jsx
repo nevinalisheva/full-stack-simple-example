@@ -4,8 +4,8 @@ import { useFetch } from "./../../../hooks/use-fetch";
 
 export const SingleProduct = () => {
   const { id } = useParams();
-  const { REACT_APP_API_URL } = process.env;
-  const url = `${REACT_APP_API_URL}/products/${id}`;
+  // const { REACT_APP_API_URL } = process.env;
+  const url = `http://localhost:8880/products/${id}`;
   const [response, error, loading] = useFetch(url);
 
   if (error) return <div>something wrong happened</div>;

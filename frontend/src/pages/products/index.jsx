@@ -4,7 +4,7 @@ import { ProductItem } from "./../../components/product-item/index";
 import { CONTAINER } from "./../../components/global";
 
 export const Products = () => {
-  const url = `http://localhost:8000/products`;
+  const url = `http://localhost:8880/products`;
   const [response, error, loading] = useFetch(url);
   console.log(response.data);
 
