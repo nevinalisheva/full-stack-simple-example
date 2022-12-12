@@ -3,10 +3,9 @@ import { useFetch } from "./../../hooks/use-fetch";
 import { CategoryItem } from "./../../components/category-item/index";
 
 export const Categories = () => {
-  const url1 = `http://localhost:8880/categories`;
-  // const { REACT_APP_API_URL } = process.env;
-  // const url = `${REACT_APP_API_URL}/categories`;
-  const [response, error, loading] = useFetch(url1);
+  const { REACT_APP_API_URL } = process.env;
+  const url = `${REACT_APP_API_URL}/categories`;
+  const [response, error, loading] = useFetch(url);
 
   if (error) return <div>something wrong happened</div>;
 
